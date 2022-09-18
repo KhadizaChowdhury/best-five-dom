@@ -1,0 +1,72 @@
+body{
+    background: #151515;
+    overflow-x: hidden;
+}
+.hero{
+    height: 100vh;
+    background: #000;
+}
+button{
+    width: 100%;
+    color: #fff;
+    background: #015196;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+.all-players{
+    margin: 100px auto;
+}
+.players .p-3{
+    background: #0D0D0D;
+    border: 1px solid #434343;
+}
+.all-players .p-3 h4{
+    margin-bottom: 30px;
+}
+.players img{
+    width: 100%;
+    height: 204px;
+}
+.selected_players .p-3, .budgets .p-3{
+    background: #0D0D0D;
+}
+input{
+    background: transparent;
+    color: #000;
+    overflow: auto;
+    border: none;
+    border: 1px solid #FFFFFF;
+}
+.input{
+    margin-bottom: 20px;
+}
+.input p{
+    margin: 0;
+    margin-right: 10px;
+}
+.price{
+    margin: 20px auto;
+}
+.price p{
+    margin: 0;
+}
+.budgets .p-3{
+    margin-top: 24px;
+}
+input:focus-visible {
+    overflow: hidden;
+    outline: none;
+    background: #fff;
+    font-weight: 500;
+}
+.price .total{
+    color: #FF5E19;
+}
+textarea:focus, input:focus {
+    color: #000;
+}
+
+input, select, textarea{
+    color: #fff;
+}

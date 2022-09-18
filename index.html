@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Five Football Player</title>
+
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="text-white">
+    <header>
+        <div class="row d-flex align-items-center justify-content-center align-content-center text-center hero">
+            <div class="col-md-6">
+                <h1>Top Five Football Player</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+        </div> 
+    </header>
+    <section class="container all-players">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row g-4 text-center">
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Lionel Messi.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Lionel Messi</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Neymar Jr.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Neymar Jr</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Kylian Mbappé.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Kylian Mbappé</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Vítor Machado.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Vítor Machado</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Sergio Ramos.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Sergio Ramos</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 players">
+                        <div>
+                            <img src="images/Renato Sanches.png" class="img-fluid">
+                            <div class="p-3">
+                                <h4>Renato Sanches</h4>
+                                <p>36 Goals <span> & 120 Assist</span></p>
+                                <button onclick="addToSelected(this)">SELECT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="selected_players">
+                    <div class="p-3">
+                        <h4 class="text-center">Selected - <span id="selected">0</span></h4>
+                        <div id="select_player">
+                            <div>
+                                <p>1. Player Name</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="budgets">
+                    <div class="p-3">
+                        <h4 class="text-center">Budgets</h4>
+                        <div class="input d-flex align-items-center justify-content-between">
+                            <p>Per Player</p>
+                            <input id="calculate_field" type="text">
+                        </div>
+                        <button id="calculate">Calculate</button>
+                        <div class="price d-flex align-items-center justify-content-between">
+                            <p>Player Expenses</p>
+                            <p>$<span id="player_expenses">00</span></p>
+                        </div>
+                        <div class="input d-flex align-items-center justify-content-between">
+                            <p>Manager
+                            </p>
+                            <input id="manager_amount" type="text">
+                        </div>
+                        <div class="input d-flex align-items-center justify-content-between">
+                            <p>Coach</p>
+                            <input id="coach_amount" type="text">
+                        </div>
+                        <button id="calculate_total">Calculate Total</button>
+                        <div class="price d-flex align-items-center justify-content-between">
+                            <p>Total</p>
+                            <p class="total">$<span id="total_expenses">00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/selectedV.js"></script>
+    <script src="js/calculation.js"></script>
+    <!-- <script src="js/budgets.js"></script> -->
+</body>
+</html>
